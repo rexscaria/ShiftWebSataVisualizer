@@ -35,7 +35,7 @@ angular.module('atApp')
           document.getElementById('graph'),
           yVals,
           {
-            title: $scope.exercise.$id +' - '+$scope.user.$id,
+            title: $scope.exercise.$id +' - '+$scope.user.$id.replace('%2E', '.'),
             labels:['Time', 'Score'],
             labelsDivStyles: { 'textAlign': 'right' },
             showRangeSelector: true,

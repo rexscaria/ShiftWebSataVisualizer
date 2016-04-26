@@ -6,7 +6,7 @@
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu"  uib-dropdown-toggle aria-labelledby="single-button">
         <li role="menuitem" ng-repeat="user in users">
-          <a ng-click="setUser(user)" href>{{user.firstname + " " + user.lastname + "(" +user.$id + ")"}}</a>
+          <a ng-click="setUser(user)" href>{{user.firstname + " " + user.lastname + "(" +user.$id.replace('%2E', '.') + ")"}}</a>
         </li>
       </ul>
     </div>
